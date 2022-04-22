@@ -11,7 +11,7 @@
       :body-text="versionInfo"
     />
     <!--播放器-->
-    <audio ref="mmPlayer"></audio>
+    <audio ref="young1Music"></audio>
   </div>
 </template>
 
@@ -66,7 +66,7 @@ export default {
 
     // 设置audio元素
     this.$nextTick(() => {
-      this.setAudioele(this.$refs.mmPlayer)
+      this.setAudioele(this.$refs.young1Music)
     })
 
     // 首次加载完成后移除动画

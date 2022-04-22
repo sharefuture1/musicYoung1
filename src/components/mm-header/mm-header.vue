@@ -3,7 +3,7 @@
   <header class="mm-header">
     <h1 class="header">
       <a href="https://github.com/sharefuture1/musicYoung1" target="_blank">
-        mmPlayer 在线音乐播放器
+        young1Music 在线音乐播放器
       </a>
     </h1>
     <dl class="user">
@@ -137,7 +137,7 @@ export default {
         creator.avatarUrl = toHttps(creator.avatarUrl)
         this.user = creator
         setTimeout(() => {
-          this.$mmToast(`${this.user.nickname} 欢迎使用 mmPlayer`)
+          this.$mmToast(`${this.user.nickname} 欢迎使用 young1Music`)
         }, 200)
       })
     },

@@ -3,7 +3,7 @@ import { playMode } from '@/config'
 // 重试次数
 let retry = 1
 
-const mmPlayerMusic = {
+const young1MusicMusic = {
   initAudio(that) {
     const ele = that.audioEle
     // 音频缓冲事件
@@ -94,4 +94,4 @@ const mmPlayerMusic = {
   }
 }
 
-export default mmPlayerMusic
+export default young1MusicMusic

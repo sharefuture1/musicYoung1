@@ -28,7 +28,7 @@ const storage = {
  * @type    HISTORYLIST_KEY：key值
  *          HistoryListMAX：最大长度
  */
-const HISTORYLIST_KEY = '__mmPlayer_historyList__'
+const HISTORYLIST_KEY = '__young1Music_historyList__'
 const HistoryListMAX = 200
 // 获取播放历史
 export function getHistoryList() {
@@ -72,7 +72,7 @@ export function clearHistoryList() {
  * @type    MODE_KEY：key值
  *          HistoryListMAX：最大长度
  */
-const MODE_KEY = '__mmPlayer_mode__'
+const MODE_KEY = '__young1Music_mode__'
 // 获取播放模式
 export function getMode() {
   return storage.get(MODE_KEY, null)
@@ -87,7 +87,7 @@ export function setMode(mode) {
  * 网易云用户uid
  * @type USERID_KEY：key值
  */
-const USERID_KEY = '__mmPlayer_userID__'
+const USERID_KEY = '__young1Music_userID__'
 // 获取用户uid
 export function getUserId() {
   return Number(storage.get(USERID_KEY, null))
@@ -102,7 +102,7 @@ export function setUserId(uid) {
  * 版本号
  * @type VERSION_KEY：key值
  */
-const VERSION_KEY = '__mmPlayer_version__'
+const VERSION_KEY = '__young1Music_version__'
 // 获取版本号
 export function getVersion() {
   let version = storage.get(VERSION_KEY, null)
@@ -118,7 +118,7 @@ export function setVersion(version) {
  * 音量
  * @type VOLUME_KEY：key值
  */
-const VOLUME_KEY = '__mmPlayer_volume__'
+const VOLUME_KEY = '__young1Music_volume__'
 // 获取音量
 export function getVolume() {
   const volume = storage.get(VOLUME_KEY, defaultVolume)

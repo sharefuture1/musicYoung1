@@ -1,7 +1,7 @@
-# mmPlayer
+# young1Music
 
 模仿 QQ 音乐网页版界面，采用 `flexbox` 和 `position` 布局；
-mmPlayer 虽然是响应式，但主要以 PC 端为主，移动端只做相应适配；
+young1Music 虽然是响应式，但主要以 PC 端为主，移动端只做相应适配；
 只做主流浏览器兼容（对 IE 说拜拜，想想以前做项目还要兼容 IE7 ，都是泪啊！！！）
 
 > api：一个开源的[网易云音乐 NodeJS 版 API](https://binaryify.github.io/NeteaseCloudMusicApi)（有 api 才有动力写！！！）
@@ -33,19 +33,19 @@ node -v
 
 [Node.js 中文网](http://nodejs.cn/)
 
-### mmPlayer
+### young1Music
 
 ```sh
-# 下载 mmPlayer
+# 下载 young1Music
 git clone https://github.com/sharefuture1/musicYoung1
 
-# 进入 mmPlayer 播放器目录
+# 进入 young1Music 播放器目录
 cd musicYoung1
 
 # 安装依赖 推荐使用 yarn
 npm install
 
-# 本地运行 mmPlayer
+# 本地运行 young1Music
 npm run serve
 
 # 编译打包
@@ -72,7 +72,7 @@ node app.js
 
 ### 注意点
 
-**运行 mmPlayer 后无法获取音乐请检查后台 `api` 服务是否启动(即控制台请求报 404)**
+**运行 young1Music 后无法获取音乐请检查后台 `api` 服务是否启动(即控制台请求报 404)**
 
 **线上部署不是直接将整个项目丢到服务器，再去运行 `npm run serve` 命令**
 
@@ -89,14 +89,14 @@ node app.js
   - 再通过 `pm2` 去启动服务(`pm2` 安装和相关命令网上有很多，这里不再赘述)
   - 最后通过服务器 `ip` + 端口号访问验证 `api` 服务是否启动成功
 
-- `mmPlayer` 线上部署
+- `young1Music` 线上部署
 
   - 首先要注意的是
   - 先将 `.env` 文件的 `VUE_APP_BASE_API_URL` 修改成上一步启动的后台 `api` 服务地址(服务器 `ip` + 端口号或者你绑定的域名)
   - 然后先在本地运行 `npm run build` 命令，会打包在生成一个 `dist` 文件
   - 最后将打包的 `dist` 文件上传到你的网站服务器目录即可
 
-- 其他：[在宝塔面板部署 mmPlayer](https://github.com/sharefuture1/Blog/issues/1)（不喜欢写文，可能有点烂不要介意哈）
+- 其他：[在宝塔面板部署 young1Music](https://github.com/sharefuture1/Blog/issues/1)（不喜欢写文，可能有点烂不要介意哈）
 - 最后：本人已和谷歌、百度达成合作了，如果还有啥不懂的，以后可以直接谷歌、百度
 
 ## 技术栈
@@ -164,7 +164,7 @@ node app.js
 │   │   │   └── topList.vue                         // 排行榜页面
 │   │   ├── userList
 │   │   │   └── userList.vue                        // 我的歌单
-│   │   ├── mmPlayer.js                             // 播放器事相关件绑定
+│   │   ├── young1Music.js                             // 播放器事相关件绑定
 │   │   └── music.vue                               // 播放器主页面
 │   ├── router
 │   │   └── index.js                                // 路由配置
@@ -176,7 +176,7 @@ node app.js
 │   │   ├── mutations.js                            // 配置 mutations
 │   │   └── state.js                                // 配置 state
 │   ├── styles                                      // 样式文件目录
-│   │   ├── index.less                              // mmPlayer 相关基础样式
+│   │   ├── index.less                              // young1Music 相关基础样式
 │   │   ├── mixin.less                              // 样式混合
 │   │   ├── reset.less                              // 样式重置
 │   │   └── var.less                                // 样式变量（字体大小、字体颜色、背景颜色）
@@ -419,7 +419,7 @@ PC 端界面自我感觉还行， 就是移动端界面总觉得怪怪的，奈�
 - 新增随机播放、列表循环、单曲循环、顺序播放功能
 - 新增清空正在播放列表功能
 - 新增清空列表的提示
-- 新增版权信息（控制台输入 mmPlayer ）
+- 新增版权信息（控制台输入 young1Music ）
 - 增加背景滤镜的模糊度和透明度
 - 增加浏览器访问的限制（兼容主流浏览器，最好全是用 chrome，哈哈）
 - 整合 `music-list` 组件
@@ -457,7 +457,7 @@ PC 端界面自我感觉还行， 就是移动端界面总觉得怪怪的，奈�
 
 ### V1.0.0（2018.02.05）
 
-- 发布正式版（因为一系列原因，mmPlayer V1.0.0 版本在试用版的基础上进行了重构了，并引入了 `Vue Router` 和 `Vuex`
+- 发布正式版（因为一系列原因，young1Music V1.0.0 版本在试用版的基础上进行了重构了，并引入了 `Vue Router` 和 `Vuex`
 - 当前播放歌曲高亮（感觉一个小 GIF 还不够）
 - 优化快速切歌导致歌曲播放失败的问题
 - 进度条拖动适配移动端

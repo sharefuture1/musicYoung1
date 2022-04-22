@@ -41,24 +41,24 @@ router.beforeEach((to, from, next) => {
     next()
   } else {
     document.title =
-      (to.meta.title && `${to.meta.title} - mmPlayer在线音乐播放器`) ||
-      'mmPlayer在线音乐播放器'
+      (to.meta.title && `${to.meta.title} - young1Music在线音乐播放器`) ||
+      'young1Music在线音乐播放器'
     next()
   }
 })
 
 // 版权信息
-window.mmPlayer = window.mmplayer = `欢迎使用 mmPlayer!
+window.young1Music = window.young1Music = `欢迎使用 young1Music!
 当前版本为：V${VERSION}
 作者：茂茂
 Github：https://github.com/sharefuture1/musicYoung1
 歌曲来源于网易云音乐 (https://music.163.com)`
 // eslint-disable-next-line no-console
-console.info(`%c${window.mmplayer}`, `color:blue`)
+console.info(`%c${window.young1Music}`, `color:blue`)
 
 // eslint-disable-next-line no-new
 new Vue({
-  el: '#mmPlayer',
+  el: '#young1Music',
   store,
   router,
   render: h => h(App)

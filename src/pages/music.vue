@@ -57,7 +57,7 @@
             {{ currentMusic.name }}
             <span>- {{ currentMusic.singer }}</span>
           </template>
-          <template v-else>欢迎使用mmPlayer在线音乐播放器</template>
+          <template v-else>欢迎使用young1Music在线音乐播放器</template>
         </div>
         <div v-if="currentMusic.id" class="music-bar-time">
           {{ currentTime | format }}/{{ currentMusic.duration % 3600 | format }}
@@ -95,14 +95,14 @@
     </div>
 
     <!--遮罩-->
-    <div class="mmPlayer-bg" :style="{ backgroundImage: picUrl }"></div>
-    <div class="mmPlayer-mask"></div>
+    <div class="young1Music-bg" :style="{ backgroundImage: picUrl }"></div>
+    <div class="young1Music-mask"></div>
   </div>
 </template>
 
 <script>
 import { getLyric } from 'api'
-import mmPlayerMusic from './mmPlayer'
+import young1MusicMusic from './young1Music'
 import {
   randomSortArray,
   parseLyric,
@@ -207,7 +207,7 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      mmPlayerMusic.initAudio(this)
+      young1MusicMusic.initAudio(this)
       this.initKeyDown()
       this.volumeChange(this.volume)
     })
@@ -448,7 +448,7 @@ export default {
     }
   }
 
-  /*底部mmPlayer-bar*/
+  /*底部young1Music-bar*/
   .music-bar {
     display: flex;
     align-items: center;
@@ -543,8 +543,8 @@ export default {
   }
 
   /*遮罩*/
-  .mmPlayer-mask,
-  .mmPlayer-bg {
+  .young1Music-mask,
+  .young1Music-bg {
     position: absolute;
     top: 0;
     right: 0;
@@ -552,12 +552,12 @@ export default {
     bottom: 0;
   }
 
-  .mmPlayer-mask {
+  .young1Music-mask {
     z-index: -1;
     background-color: @mask_color;
   }
 
-  .mmPlayer-bg {
+  .young1Music-bg {
     z-index: -2;
     background-repeat: no-repeat;
     background-size: cover;
