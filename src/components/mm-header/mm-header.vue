@@ -2,7 +2,7 @@
   <!--头部-->
   <header class="mm-header">
     <h1 class="header">
-      <a href="https://github.com/sharefuture1/musicYoung1" target="_blank">
+      <a href="https://nav.young1.ml" target="_blank">
         young1Music 在线音乐播放器
       </a>
     </h1>

@@ -50,8 +50,8 @@ router.beforeEach((to, from, next) => {
 // 版权信息
 window.young1Music = window.young1Music = `欢迎使用 young1Music!
 当前版本为：V${VERSION}
-作者：茂茂
-Github：https://github.com/sharefuture1/musicYoung1
+作者：young1
+Github：https://nav.young1.ml
 歌曲来源于网易云音乐 (https://music.163.com)`
 // eslint-disable-next-line no-console
 console.info(`%c${window.young1Music}`, `color:blue`)
